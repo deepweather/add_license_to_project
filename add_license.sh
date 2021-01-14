@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in $(find /folder -name '*.py')
+for i in $(find $1 -name '*.py')
 do
   if ! grep -q Copyright $i
   then
